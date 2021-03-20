@@ -1,0 +1,14 @@
+<%- include("Partials/header.ejs") %>  
+<%# for(let i = 0; i < data.results.length; i++) { %>
+  <!-- <h3><%#= data.results[i].title %></h3>
+    <p><%#= data.results[i].overview %></p>
+    <p>Rating: <%#= data.results[i].vote_average %> out of 10 stars</p>
+    <img src="https://image.tmdb.org/t/p/w500/<%#= data.results[i].backdrop_path %>" alt="movie posters"> -->
+ <% for(let x of data.results) { %>
+  <h3> <%= x.title %></h3>
+  <p><%= x.overview %></p>
+  <p>Rating: <%= x.vote_average %> out of 10 stars</p>
+  <img src="https://image.tmdb.org/t/p/w500/<%= x.backdrop_path %>" alt="movie posters">
+  <hr>
+<% } %>
+<%- include("Partials/footer.ejs") %> 
