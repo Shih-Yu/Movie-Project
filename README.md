@@ -9,3 +9,11 @@ This is a project that gets information of the latest movie showingfrom [The Mov
 - EJS
 - Node
 - Node-Fetch
+
+## Instructions
+
+- Clone the repo
+- Run npm install
+- Replace (endpoint) variable with your own API key from [The Movie Database](https://www.themoviedb.org/)
+- Run npm start
+- Open browser to localhost:3000
