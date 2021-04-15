@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 // Home Page
 app.get("/home", (req, res) => {
 // Assigning API endpoint
-const endpoint = process.env.URI;
+const endpoint = process.env.URL_LINK;
 // Fetching endpoint of API from Movie DB from back end using node-fetch package
 $fetch(endpoint)
 // Getting response in JSON and parse to JS object 
